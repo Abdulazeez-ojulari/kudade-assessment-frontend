@@ -1,0 +1,249 @@
+.popup_container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: #00000047;
+    z-index: 200;
+}
+
+.popup {
+    width: 973px;
+    height: 477px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+    display: grid;
+    grid-gap: 2rem;
+    border-radius: 11px;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.popup_top {
+    display: grid;
+    grid-auto-flow: column;
+    /* width: max-content; */
+    justify-content: space-between;
+    /* grid-template-rows: 3rem; */
+    grid-template-columns: 1fr 4rem;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    align-items: center;
+}
+
+.popup_top>h2 {
+    font-family: "Montserrat Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #222321;
+}
+
+.popup_top>h3 {
+    font-family: "Montserrat Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    /* text-transform: uppercase; */
+    color: #2B2B2B;
+}
+.popup_col_1 {
+    display: grid;
+    justify-content: start;
+    align-content: start;
+    grid-gap: 1rem;
+}
+
+.popup_col_2 {
+    display: grid;
+    align-items: start;
+    grid-template-rows: max-content;
+    /* margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem; */
+}
+
+.popup_details {
+    display: grid;
+    grid-gap: 10px;
+    width: 90%;
+}
+
+.popup_name {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 37px;
+
+    color: #000000;
+    word-break: break-all;
+}
+
+.popup_description {
+    word-break: break-word;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 106.52%;
+    /* or 21px */
+
+
+    color: #353535
+}
+
+.popup_categories {
+    display: grid;
+}
+
+.popup_categories2 {
+    display: none;
+}
+
+.popup_category_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 149.52%;
+    /* identical to box height, or 21px */
+
+
+    color: #000000;
+}
+
+.popup_category {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 149.52%;
+    /* or 21px */
+
+
+    color: #353535
+}
+
+.popup_cancel_con {
+    color: #949494 !important;
+    font-size: 25px !important;
+}
+
+.popup_cancel {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(245, 246, 244);
+    border-radius: 50%;
+    color: rgb(34, 35, 33);
+}
+
+.popup_col_h3 {
+    display: none;
+    font-family: "Montserrat SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #064A61;
+    line-height: 20px;
+}
+
+.popup_footer{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 1rem;
+    align-self: end;
+    justify-self: end;
+}
+
+.edit_button2{
+    width: 110px;
+    height: 40px;
+    
+    background: #04D505;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    align-self: end;
+    justify-self: end;
+}
+
+@media screen and (max-width: 985px) {
+    .popup {
+        width: 95%;
+    }
+
+    .popup_main_img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .popup_image {
+        width: 46px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .popup {
+        grid-gap: 1rem;
+        height: max-content;
+    }
+
+    .popup_col_1 {
+        grid-gap: 10px;
+    }
+
+    .popup_main_img {
+        width: 100%;
+        height: 163px;
+    }
+
+    .popup_images {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .popup_image {
+        width: 100%;
+    }
+
+    .popup_name {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .popup_categories {
+        display: none;
+    }
+
+    .popup_categories2 {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .popup_size {
+        width: 100%;
+    }
+
+    .popup_main_img {
+        width: 100%;
+        height: 150px;
+    }
+}
